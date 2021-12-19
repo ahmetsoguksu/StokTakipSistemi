@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipSistemi", "StokTakipSistemi\StokTakipSistemi.csproj", "{430EE8FA-14E5-4ECD-A9E2-9F5553C2E641}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipSistemi.WinFormsUI", "StokTakipSistemi\StokTakipSistemi.WinFormsUI.csproj", "{430EE8FA-14E5-4ECD-A9E2-9F5553C2E641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipSistemi.Entities", "StokTakipSistemi.Entities\StokTakipSistemi.Entities.csproj", "{F6389D45-6DDA-4C8A-A273-D039C173BC02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipSistemi.DataAccess", "StokTakipSistemi.DataAccess\StokTakipSistemi.DataAccess.csproj", "{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipSistemi.Business", "StokTakipSistemi.Business\StokTakipSistemi.Business.csproj", "{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{430EE8FA-14E5-4ECD-A9E2-9F5553C2E641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430EE8FA-14E5-4ECD-A9E2-9F5553C2E641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430EE8FA-14E5-4ECD-A9E2-9F5553C2E641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6389D45-6DDA-4C8A-A273-D039C173BC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6389D45-6DDA-4C8A-A273-D039C173BC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6389D45-6DDA-4C8A-A273-D039C173BC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6389D45-6DDA-4C8A-A273-D039C173BC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
