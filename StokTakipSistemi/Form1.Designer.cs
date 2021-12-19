@@ -45,7 +45,7 @@ namespace StokTakipSistemi
             this.label1.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 70);
+            this.label1.Size = new System.Drawing.Size(303, 70);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stok Takip Sistemi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,9 +84,9 @@ namespace StokTakipSistemi
             // 
             this.btnGiris.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnGiris.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGiris.Location = new System.Drawing.Point(0, 239);
+            this.btnGiris.Location = new System.Drawing.Point(0, 230);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(308, 49);
+            this.btnGiris.Size = new System.Drawing.Size(303, 49);
             this.btnGiris.TabIndex = 5;
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.UseVisualStyleBackColor = true;
@@ -96,9 +96,9 @@ namespace StokTakipSistemi
             this.lblUyari.BackColor = System.Drawing.Color.FloralWhite;
             this.lblUyari.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblUyari.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblUyari.Location = new System.Drawing.Point(0, 205);
+            this.lblUyari.Location = new System.Drawing.Point(0, 196);
             this.lblUyari.Name = "lblUyari";
-            this.lblUyari.Size = new System.Drawing.Size(308, 34);
+            this.lblUyari.Size = new System.Drawing.Size(303, 34);
             this.lblUyari.TabIndex = 6;
             this.lblUyari.Text = "label4";
             this.lblUyari.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +108,7 @@ namespace StokTakipSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 288);
+            this.ClientSize = new System.Drawing.Size(303, 279);
             this.Controls.Add(this.lblUyari);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.tboxParola);

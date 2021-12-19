@@ -1,5 +1,4 @@
-﻿using StokTakipSistemi.Business.Concrete;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +16,5 @@ namespace StokTakipSistemi
         {
             InitializeComponent();
         }
-
     }
 }
