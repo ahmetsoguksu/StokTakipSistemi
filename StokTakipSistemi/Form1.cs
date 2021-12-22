@@ -18,5 +18,11 @@ namespace StokTakipSistemi
             InitializeComponent();
         }
 
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            FormYetkili formYetkili = new FormYetkili();
+            formYetkili.Show();
+            this.Hide();
+        }
     }
 }

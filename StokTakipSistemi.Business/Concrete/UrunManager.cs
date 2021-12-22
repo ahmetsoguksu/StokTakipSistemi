@@ -1,16 +1,17 @@
-﻿using StokTakipSistemi.DataAccess.Concrete;
+﻿using System.Collections.Generic;
+using StokTakipSistemi.Business.Abstract;
+using StokTakipSistemi.DataAccess.Abstract;
 using StokTakipSistemi.Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StokTakipSistemi.Business.Concrete
 {
-    public class UrunManager
+    public class UrunManager:IUrunService
     {
-        tbl_urunDal _urunDal = new tbl_urunDal();
+        private Itbl_urunDal _urunDal;
+        public UrunManager(Itbl_urunDal urunDal)
+        {
+            _urunDal = urunDal;
+        }
         public List<tbl_urun> GetAll()
         {
             return _urunDal.GetAll();

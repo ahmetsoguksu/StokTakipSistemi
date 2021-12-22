@@ -1,13 +1,14 @@
-﻿using StokTakipSistemi.Entities.Concrete;
+﻿using StokTakipSistemi.DataAccess.Abstract;
+using StokTakipSistemi.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StokTakipSistemi.DataAccess.Concrete
+namespace StokTakipSistemi.DataAccess.Concrete.EntityFramework
 {
-    public class tbl_urunDal
+    public class Eftbl_urunDal:Itbl_urunDal
     {
         public List<tbl_urun> GetAll()
         {

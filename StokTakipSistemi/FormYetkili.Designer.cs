@@ -36,6 +36,8 @@ namespace StokTakipSistemi
             this.tpageSatis = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.lblSatisFiyati = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lblAlisFiyati = new System.Windows.Forms.Label();
@@ -49,6 +51,8 @@ namespace StokTakipSistemi
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgwSatisUrunListesi = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tboxUrunId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,6 +69,8 @@ namespace StokTakipSistemi
             this.tpageAlis = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -81,6 +87,7 @@ namespace StokTakipSistemi
             this.dgwAlimUrunListesi = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label32 = new System.Windows.Forms.Label();
             this.lblSatisFiyatiAlim = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblAlisFiyatiAlim = new System.Windows.Forms.Label();
@@ -91,6 +98,7 @@ namespace StokTakipSistemi
             this.label20 = new System.Windows.Forms.Label();
             this.lblUrunAdiAlim = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.lblUrunIdAlim = new System.Windows.Forms.Label();
             this.tpageStok = new System.Windows.Forms.TabPage();
             this.dgwStokUrunListesi = new System.Windows.Forms.DataGridView();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -105,48 +113,40 @@ namespace StokTakipSistemi
             this.tpageGecmis = new System.Windows.Forms.TabPage();
             this.dgwAlisVerisGecmisi = new System.Windows.Forms.DataGridView();
             this.tpageUrunDuzenle = new System.Windows.Forms.TabPage();
-            this.tpageKategoriDuzenle = new System.Windows.Forms.TabPage();
-            this.tpageSatisRaporlari = new System.Windows.Forms.TabPage();
-            this.tpageAlimRaporlari = new System.Windows.Forms.TabPage();
-            this.tpageParaAkisiRaporlari = new System.Windows.Forms.TabPage();
-            this.tpageKullanicilar = new System.Windows.Forms.TabPage();
-            this.dgwEditUrunListesi = new System.Windows.Forms.DataGridView();
-            this.label19 = new System.Windows.Forms.Label();
-            this.tboxUrunId = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.lblUrunIdAlim = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.cboxEditUrunKategori = new System.Windows.Forms.ComboBox();
-            this.tboxEditUrunStok = new System.Windows.Forms.TextBox();
-            this.tboxEditUrunFiyat = new System.Windows.Forms.TextBox();
-            this.tboxEditUrunBirim = new System.Windows.Forms.TextBox();
-            this.tBoxEditUrunAdi = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tboxEditUrunSearch = new System.Windows.Forms.TextBox();
+            this.btnEditUrunGuncelle = new System.Windows.Forms.Button();
+            this.btnEditUrunEkle = new System.Windows.Forms.Button();
+            this.btnEditUrunSil = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
             this.tBoxEditUrunId = new System.Windows.Forms.TextBox();
-            this.btnEditUrunSil = new System.Windows.Forms.Button();
-            this.btnEditUrunEkle = new System.Windows.Forms.Button();
-            this.btnEditUrunGuncelle = new System.Windows.Forms.Button();
-            this.tboxEditUrunSearch = new System.Windows.Forms.TextBox();
-            this.dgwEditKategoriListesi = new System.Windows.Forms.DataGridView();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.tboxEditUrunStok = new System.Windows.Forms.TextBox();
+            this.cboxEditUrunKategori = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tboxEditUrunFiyat = new System.Windows.Forms.TextBox();
+            this.tBoxEditUrunAdi = new System.Windows.Forms.TextBox();
+            this.tboxEditUrunBirim = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.dgwEditUrunListesi = new System.Windows.Forms.DataGridView();
+            this.tpageKategoriDuzenle = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.tboxEditKategoriSearch = new System.Windows.Forms.TextBox();
-            this.tboxEditKategori = new System.Windows.Forms.TextBox();
-            this.tboxEditKategoriId = new System.Windows.Forms.TextBox();
             this.btnEditKategoriGuncelle = new System.Windows.Forms.Button();
             this.btnEditKategoriEkle = new System.Windows.Forms.Button();
             this.btnEditKategoriSil = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tboxEditKategoriId = new System.Windows.Forms.TextBox();
+            this.tboxEditKategori = new System.Windows.Forms.TextBox();
+            this.tboxEditKategoriSearch = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.dgwEditKategoriListesi = new System.Windows.Forms.DataGridView();
+            this.tpageSatisRaporlari = new System.Windows.Forms.TabPage();
+            this.tpageAlimRaporlari = new System.Windows.Forms.TabPage();
+            this.tpageParaAkisiRaporlari = new System.Windows.Forms.TabPage();
+            this.tpageKullanicilar = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpageSatis.SuspendLayout();
@@ -167,11 +167,11 @@ namespace StokTakipSistemi
             this.tpageGecmis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwAlisVerisGecmisi)).BeginInit();
             this.tpageUrunDuzenle.SuspendLayout();
-            this.tpageKategoriDuzenle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwEditUrunListesi)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwEditKategoriListesi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwEditUrunListesi)).BeginInit();
+            this.tpageKategoriDuzenle.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwEditKategoriListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -279,7 +279,31 @@ namespace StokTakipSistemi
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(432, 545);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // label30
+            // 
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label30.Location = new System.Drawing.Point(220, 496);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(206, 51);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "lblUrunId";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label21.Location = new System.Drawing.Point(6, 496);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(205, 51);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Ürün Id:";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSatisFiyati
             // 
@@ -453,6 +477,25 @@ namespace StokTakipSistemi
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ürün Seçin";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Location = new System.Drawing.Point(6, 121);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(135, 40);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Ürün id:";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tboxUrunId
+            // 
+            this.tboxUrunId.Location = new System.Drawing.Point(175, 127);
+            this.tboxUrunId.Name = "tboxUrunId";
+            this.tboxUrunId.Size = new System.Drawing.Size(264, 22);
+            this.tboxUrunId.TabIndex = 14;
             // 
             // label7
             // 
@@ -632,6 +675,25 @@ namespace StokTakipSistemi
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ürün Seçin";
             // 
+            // label31
+            // 
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label31.Location = new System.Drawing.Point(6, 101);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(135, 40);
+            this.label31.TabIndex = 15;
+            this.label31.Text = "Ürün id:";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(175, 107);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(264, 22);
+            this.textBox1.TabIndex = 16;
+            // 
             // label23
             // 
             this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -783,9 +845,7 @@ namespace StokTakipSistemi
             this.groupBox5.Size = new System.Drawing.Size(445, 582);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Ürün Bilgisi";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
+            this.groupBox5.Text = "Ürün Bilgisi";            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
@@ -815,6 +875,19 @@ namespace StokTakipSistemi
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(432, 545);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // label32
+            // 
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label32.Location = new System.Drawing.Point(6, 503);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(205, 44);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "Ürün Id:";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSatisFiyatiAlim
             // 
@@ -940,6 +1013,18 @@ namespace StokTakipSistemi
             this.label22.TabIndex = 0;
             this.label22.Text = "Ürün Adı:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUrunIdAlim
+            // 
+            this.lblUrunIdAlim.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUrunIdAlim.Location = new System.Drawing.Point(220, 503);
+            this.lblUrunIdAlim.Name = "lblUrunIdAlim";
+            this.lblUrunIdAlim.Size = new System.Drawing.Size(206, 44);
+            this.lblUrunIdAlim.TabIndex = 13;
+            this.lblUrunIdAlim.Text = "lblUrunIdAlim";
+            this.lblUrunIdAlim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tpageStok
             // 
@@ -1095,248 +1180,6 @@ namespace StokTakipSistemi
             this.tpageUrunDuzenle.Text = "Ürün Bilgileri Düzenleme";
             this.tpageUrunDuzenle.UseVisualStyleBackColor = true;
             // 
-            // tpageKategoriDuzenle
-            // 
-            this.tpageKategoriDuzenle.Controls.Add(this.groupBox10);
-            this.tpageKategoriDuzenle.Controls.Add(this.dgwEditKategoriListesi);
-            this.tpageKategoriDuzenle.Location = new System.Drawing.Point(4, 25);
-            this.tpageKategoriDuzenle.Name = "tpageKategoriDuzenle";
-            this.tpageKategoriDuzenle.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageKategoriDuzenle.Size = new System.Drawing.Size(1366, 588);
-            this.tpageKategoriDuzenle.TabIndex = 5;
-            this.tpageKategoriDuzenle.Text = "Kategorileri Düzenle";
-            this.tpageKategoriDuzenle.UseVisualStyleBackColor = true;
-            // 
-            // tpageSatisRaporlari
-            // 
-            this.tpageSatisRaporlari.Location = new System.Drawing.Point(4, 25);
-            this.tpageSatisRaporlari.Name = "tpageSatisRaporlari";
-            this.tpageSatisRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageSatisRaporlari.Size = new System.Drawing.Size(1366, 588);
-            this.tpageSatisRaporlari.TabIndex = 6;
-            this.tpageSatisRaporlari.Text = "Satış Raporları";
-            this.tpageSatisRaporlari.UseVisualStyleBackColor = true;
-            // 
-            // tpageAlimRaporlari
-            // 
-            this.tpageAlimRaporlari.Location = new System.Drawing.Point(4, 25);
-            this.tpageAlimRaporlari.Name = "tpageAlimRaporlari";
-            this.tpageAlimRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageAlimRaporlari.Size = new System.Drawing.Size(1366, 588);
-            this.tpageAlimRaporlari.TabIndex = 7;
-            this.tpageAlimRaporlari.Text = "Satın Alma Raporları";
-            this.tpageAlimRaporlari.UseVisualStyleBackColor = true;
-            // 
-            // tpageParaAkisiRaporlari
-            // 
-            this.tpageParaAkisiRaporlari.Location = new System.Drawing.Point(4, 25);
-            this.tpageParaAkisiRaporlari.Name = "tpageParaAkisiRaporlari";
-            this.tpageParaAkisiRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageParaAkisiRaporlari.Size = new System.Drawing.Size(1366, 588);
-            this.tpageParaAkisiRaporlari.TabIndex = 8;
-            this.tpageParaAkisiRaporlari.Text = "Para Giriş-Çıkış Raporları";
-            this.tpageParaAkisiRaporlari.UseVisualStyleBackColor = true;
-            // 
-            // tpageKullanicilar
-            // 
-            this.tpageKullanicilar.Location = new System.Drawing.Point(4, 25);
-            this.tpageKullanicilar.Name = "tpageKullanicilar";
-            this.tpageKullanicilar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageKullanicilar.Size = new System.Drawing.Size(1366, 588);
-            this.tpageKullanicilar.TabIndex = 9;
-            this.tpageKullanicilar.Text = "Kullanıcı Bilgileri";
-            this.tpageKullanicilar.UseVisualStyleBackColor = true;
-            // 
-            // dgwEditUrunListesi
-            // 
-            this.dgwEditUrunListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwEditUrunListesi.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgwEditUrunListesi.Location = new System.Drawing.Point(382, 3);
-            this.dgwEditUrunListesi.Name = "dgwEditUrunListesi";
-            this.dgwEditUrunListesi.RowHeadersWidth = 51;
-            this.dgwEditUrunListesi.RowTemplate.Height = 24;
-            this.dgwEditUrunListesi.Size = new System.Drawing.Size(981, 582);
-            this.dgwEditUrunListesi.TabIndex = 0;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.Location = new System.Drawing.Point(6, 121);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(135, 40);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Ürün id:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tboxUrunId
-            // 
-            this.tboxUrunId.Location = new System.Drawing.Point(175, 127);
-            this.tboxUrunId.Name = "tboxUrunId";
-            this.tboxUrunId.Size = new System.Drawing.Size(264, 22);
-            this.tboxUrunId.TabIndex = 14;
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label21.Location = new System.Drawing.Point(6, 496);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(205, 51);
-            this.label21.TabIndex = 10;
-            this.label21.Text = "Ürün Id:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label30.Location = new System.Drawing.Point(220, 496);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(206, 51);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "lblUrunId";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUrunIdAlim
-            // 
-            this.lblUrunIdAlim.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUrunIdAlim.Location = new System.Drawing.Point(220, 503);
-            this.lblUrunIdAlim.Name = "lblUrunIdAlim";
-            this.lblUrunIdAlim.Size = new System.Drawing.Size(206, 44);
-            this.lblUrunIdAlim.TabIndex = 13;
-            this.lblUrunIdAlim.Text = "lblUrunIdAlim";
-            this.lblUrunIdAlim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label32.Location = new System.Drawing.Point(6, 503);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(205, 44);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "Ürün Id:";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label31.Location = new System.Drawing.Point(6, 101);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(135, 40);
-            this.label31.TabIndex = 15;
-            this.label31.Text = "Ürün id:";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 22);
-            this.textBox1.TabIndex = 16;
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.Honeydew;
-            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label33.Location = new System.Drawing.Point(6, 183);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(361, 34);
-            this.label33.TabIndex = 22;
-            this.label33.Text = "Kategori:";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cboxEditUrunKategori
-            // 
-            this.cboxEditUrunKategori.FormattingEnabled = true;
-            this.cboxEditUrunKategori.Location = new System.Drawing.Point(6, 225);
-            this.cboxEditUrunKategori.Name = "cboxEditUrunKategori";
-            this.cboxEditUrunKategori.Size = new System.Drawing.Size(361, 24);
-            this.cboxEditUrunKategori.TabIndex = 23;
-            // 
-            // tboxEditUrunStok
-            // 
-            this.tboxEditUrunStok.Location = new System.Drawing.Point(6, 416);
-            this.tboxEditUrunStok.Name = "tboxEditUrunStok";
-            this.tboxEditUrunStok.Size = new System.Drawing.Size(361, 22);
-            this.tboxEditUrunStok.TabIndex = 21;
-            // 
-            // tboxEditUrunFiyat
-            // 
-            this.tboxEditUrunFiyat.Location = new System.Drawing.Point(6, 354);
-            this.tboxEditUrunFiyat.Name = "tboxEditUrunFiyat";
-            this.tboxEditUrunFiyat.Size = new System.Drawing.Size(361, 22);
-            this.tboxEditUrunFiyat.TabIndex = 20;
-            // 
-            // tboxEditUrunBirim
-            // 
-            this.tboxEditUrunBirim.Location = new System.Drawing.Point(5, 289);
-            this.tboxEditUrunBirim.Name = "tboxEditUrunBirim";
-            this.tboxEditUrunBirim.Size = new System.Drawing.Size(362, 22);
-            this.tboxEditUrunBirim.TabIndex = 19;
-            // 
-            // tBoxEditUrunAdi
-            // 
-            this.tBoxEditUrunAdi.Location = new System.Drawing.Point(6, 97);
-            this.tBoxEditUrunAdi.Name = "tBoxEditUrunAdi";
-            this.tBoxEditUrunAdi.Size = new System.Drawing.Size(361, 22);
-            this.tBoxEditUrunAdi.TabIndex = 18;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Honeydew;
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label34.Location = new System.Drawing.Point(6, 379);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(361, 34);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Mevcut Stok:";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.Color.Honeydew;
-            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label35.Location = new System.Drawing.Point(6, 252);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(361, 34);
-            this.label35.TabIndex = 16;
-            this.label35.Text = "Birim Türü:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.Honeydew;
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label36.Location = new System.Drawing.Point(5, 314);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(362, 34);
-            this.label36.TabIndex = 15;
-            this.label36.Text = "Birim Fiyat:";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.Honeydew;
-            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Location = new System.Drawing.Point(6, 60);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(361, 34);
-            this.label37.TabIndex = 14;
-            this.label37.Text = "Ürün adı:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.tboxEditUrunSearch);
@@ -1363,6 +1206,54 @@ namespace StokTakipSistemi
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Ürün Bilgileri Düzenle";
             // 
+            // tboxEditUrunSearch
+            // 
+            this.tboxEditUrunSearch.BackColor = System.Drawing.Color.Bisque;
+            this.tboxEditUrunSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tboxEditUrunSearch.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.tboxEditUrunSearch.Location = new System.Drawing.Point(7, 22);
+            this.tboxEditUrunSearch.Name = "tboxEditUrunSearch";
+            this.tboxEditUrunSearch.ShortcutsEnabled = false;
+            this.tboxEditUrunSearch.Size = new System.Drawing.Size(359, 26);
+            this.tboxEditUrunSearch.TabIndex = 29;
+            this.tboxEditUrunSearch.Tag = "Aramak istediğiniz ürün";
+            // 
+            // btnEditUrunGuncelle
+            // 
+            this.btnEditUrunGuncelle.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditUrunGuncelle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnEditUrunGuncelle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEditUrunGuncelle.Location = new System.Drawing.Point(3, 441);
+            this.btnEditUrunGuncelle.Name = "btnEditUrunGuncelle";
+            this.btnEditUrunGuncelle.Size = new System.Drawing.Size(367, 46);
+            this.btnEditUrunGuncelle.TabIndex = 28;
+            this.btnEditUrunGuncelle.Text = "Güncelle";
+            this.btnEditUrunGuncelle.UseVisualStyleBackColor = false;
+            // 
+            // btnEditUrunEkle
+            // 
+            this.btnEditUrunEkle.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnEditUrunEkle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnEditUrunEkle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEditUrunEkle.Location = new System.Drawing.Point(3, 487);
+            this.btnEditUrunEkle.Name = "btnEditUrunEkle";
+            this.btnEditUrunEkle.Size = new System.Drawing.Size(367, 46);
+            this.btnEditUrunEkle.TabIndex = 27;
+            this.btnEditUrunEkle.Text = "Yeni Ekle";
+            this.btnEditUrunEkle.UseVisualStyleBackColor = false;
+            // 
+            // btnEditUrunSil
+            // 
+            this.btnEditUrunSil.BackColor = System.Drawing.Color.DarkRed;
+            this.btnEditUrunSil.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnEditUrunSil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEditUrunSil.Location = new System.Drawing.Point(3, 533);
+            this.btnEditUrunSil.Name = "btnEditUrunSil";
+            this.btnEditUrunSil.Size = new System.Drawing.Size(367, 46);
+            this.btnEditUrunSil.TabIndex = 26;
+            this.btnEditUrunSil.Text = "SİL";
+            this.btnEditUrunSil.UseVisualStyleBackColor = false;
+            // 
             // label38
             // 
             this.label38.BackColor = System.Drawing.Color.Honeydew;
@@ -1381,86 +1272,119 @@ namespace StokTakipSistemi
             this.tBoxEditUrunId.Size = new System.Drawing.Size(361, 22);
             this.tBoxEditUrunId.TabIndex = 25;
             // 
-            // btnEditUrunSil
+            // label37
             // 
-            this.btnEditUrunSil.BackColor = System.Drawing.Color.DarkRed;
-            this.btnEditUrunSil.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnEditUrunSil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEditUrunSil.Location = new System.Drawing.Point(3, 533);
-            this.btnEditUrunSil.Name = "btnEditUrunSil";
-            this.btnEditUrunSil.Size = new System.Drawing.Size(367, 46);
-            this.btnEditUrunSil.TabIndex = 26;
-            this.btnEditUrunSil.Text = "SİL";
-            this.btnEditUrunSil.UseVisualStyleBackColor = false;
+            this.label37.BackColor = System.Drawing.Color.Honeydew;
+            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label37.Location = new System.Drawing.Point(6, 60);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(361, 34);
+            this.label37.TabIndex = 14;
+            this.label37.Text = "Ürün adı:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnEditUrunEkle
+            // label33
             // 
-            this.btnEditUrunEkle.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnEditUrunEkle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnEditUrunEkle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEditUrunEkle.Location = new System.Drawing.Point(3, 487);
-            this.btnEditUrunEkle.Name = "btnEditUrunEkle";
-            this.btnEditUrunEkle.Size = new System.Drawing.Size(367, 46);
-            this.btnEditUrunEkle.TabIndex = 27;
-            this.btnEditUrunEkle.Text = "Yeni Ekle";
-            this.btnEditUrunEkle.UseVisualStyleBackColor = false;
+            this.label33.BackColor = System.Drawing.Color.Honeydew;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Location = new System.Drawing.Point(6, 183);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(361, 34);
+            this.label33.TabIndex = 22;
+            this.label33.Text = "Kategori:";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnEditUrunGuncelle
+            // tboxEditUrunStok
             // 
-            this.btnEditUrunGuncelle.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnEditUrunGuncelle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnEditUrunGuncelle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEditUrunGuncelle.Location = new System.Drawing.Point(3, 441);
-            this.btnEditUrunGuncelle.Name = "btnEditUrunGuncelle";
-            this.btnEditUrunGuncelle.Size = new System.Drawing.Size(367, 46);
-            this.btnEditUrunGuncelle.TabIndex = 28;
-            this.btnEditUrunGuncelle.Text = "Güncelle";
-            this.btnEditUrunGuncelle.UseVisualStyleBackColor = false;
+            this.tboxEditUrunStok.Location = new System.Drawing.Point(6, 416);
+            this.tboxEditUrunStok.Name = "tboxEditUrunStok";
+            this.tboxEditUrunStok.Size = new System.Drawing.Size(361, 22);
+            this.tboxEditUrunStok.TabIndex = 21;
             // 
-            // tboxEditUrunSearch
+            // cboxEditUrunKategori
             // 
-            this.tboxEditUrunSearch.BackColor = System.Drawing.Color.Bisque;
-            this.tboxEditUrunSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tboxEditUrunSearch.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.tboxEditUrunSearch.Location = new System.Drawing.Point(7, 22);
-            this.tboxEditUrunSearch.Name = "tboxEditUrunSearch";
-            this.tboxEditUrunSearch.ShortcutsEnabled = false;
-            this.tboxEditUrunSearch.Size = new System.Drawing.Size(359, 26);
-            this.tboxEditUrunSearch.TabIndex = 29;
-            this.tboxEditUrunSearch.Tag = "Aramak istediğiniz ürün";
+            this.cboxEditUrunKategori.FormattingEnabled = true;
+            this.cboxEditUrunKategori.Location = new System.Drawing.Point(6, 225);
+            this.cboxEditUrunKategori.Name = "cboxEditUrunKategori";
+            this.cboxEditUrunKategori.Size = new System.Drawing.Size(361, 24);
+            this.cboxEditUrunKategori.TabIndex = 23;
             // 
-            // dgwEditKategoriListesi
+            // label34
             // 
-            this.dgwEditKategoriListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwEditKategoriListesi.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgwEditKategoriListesi.Location = new System.Drawing.Point(664, 3);
-            this.dgwEditKategoriListesi.Name = "dgwEditKategoriListesi";
-            this.dgwEditKategoriListesi.RowHeadersWidth = 51;
-            this.dgwEditKategoriListesi.RowTemplate.Height = 24;
-            this.dgwEditKategoriListesi.Size = new System.Drawing.Size(699, 582);
-            this.dgwEditKategoriListesi.TabIndex = 1;
+            this.label34.BackColor = System.Drawing.Color.Honeydew;
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label34.Location = new System.Drawing.Point(6, 379);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(361, 34);
+            this.label34.TabIndex = 17;
+            this.label34.Text = "Mevcut Stok:";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label39
+            // tboxEditUrunFiyat
             // 
-            this.label39.BackColor = System.Drawing.Color.Honeydew;
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.Location = new System.Drawing.Point(6, 103);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(232, 34);
-            this.label39.TabIndex = 15;
-            this.label39.Text = "Kategori adı:";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tboxEditUrunFiyat.Location = new System.Drawing.Point(6, 354);
+            this.tboxEditUrunFiyat.Name = "tboxEditUrunFiyat";
+            this.tboxEditUrunFiyat.Size = new System.Drawing.Size(361, 22);
+            this.tboxEditUrunFiyat.TabIndex = 20;
             // 
-            // label40
+            // tBoxEditUrunAdi
             // 
-            this.label40.BackColor = System.Drawing.Color.Honeydew;
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Location = new System.Drawing.Point(6, 156);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(232, 34);
-            this.label40.TabIndex = 16;
-            this.label40.Text = "Kategori Id:";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tBoxEditUrunAdi.Location = new System.Drawing.Point(6, 97);
+            this.tBoxEditUrunAdi.Name = "tBoxEditUrunAdi";
+            this.tBoxEditUrunAdi.Size = new System.Drawing.Size(361, 22);
+            this.tBoxEditUrunAdi.TabIndex = 18;
+            // 
+            // tboxEditUrunBirim
+            // 
+            this.tboxEditUrunBirim.Location = new System.Drawing.Point(5, 289);
+            this.tboxEditUrunBirim.Name = "tboxEditUrunBirim";
+            this.tboxEditUrunBirim.Size = new System.Drawing.Size(362, 22);
+            this.tboxEditUrunBirim.TabIndex = 19;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.Honeydew;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label36.Location = new System.Drawing.Point(5, 314);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(362, 34);
+            this.label36.TabIndex = 15;
+            this.label36.Text = "Birim Fiyat:";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.Color.Honeydew;
+            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label35.Location = new System.Drawing.Point(6, 252);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(361, 34);
+            this.label35.TabIndex = 16;
+            this.label35.Text = "Birim Türü:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dgwEditUrunListesi
+            // 
+            this.dgwEditUrunListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwEditUrunListesi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgwEditUrunListesi.Location = new System.Drawing.Point(382, 3);
+            this.dgwEditUrunListesi.Name = "dgwEditUrunListesi";
+            this.dgwEditUrunListesi.RowHeadersWidth = 51;
+            this.dgwEditUrunListesi.RowTemplate.Height = 24;
+            this.dgwEditUrunListesi.Size = new System.Drawing.Size(981, 582);
+            this.dgwEditUrunListesi.TabIndex = 0;
+            // 
+            // tpageKategoriDuzenle
+            // 
+            this.tpageKategoriDuzenle.Controls.Add(this.groupBox10);
+            this.tpageKategoriDuzenle.Controls.Add(this.dgwEditKategoriListesi);
+            this.tpageKategoriDuzenle.Location = new System.Drawing.Point(4, 25);
+            this.tpageKategoriDuzenle.Name = "tpageKategoriDuzenle";
+            this.tpageKategoriDuzenle.Padding = new System.Windows.Forms.Padding(3);
+            this.tpageKategoriDuzenle.Size = new System.Drawing.Size(1366, 588);
+            this.tpageKategoriDuzenle.TabIndex = 5;
+            this.tpageKategoriDuzenle.Text = "Kategorileri Düzenle";
+            this.tpageKategoriDuzenle.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -1479,32 +1403,6 @@ namespace StokTakipSistemi
             this.groupBox10.TabIndex = 17;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Kategorileri Düzenle";
-            // 
-            // tboxEditKategoriSearch
-            // 
-            this.tboxEditKategoriSearch.BackColor = System.Drawing.Color.Bisque;
-            this.tboxEditKategoriSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tboxEditKategoriSearch.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.tboxEditKategoriSearch.Location = new System.Drawing.Point(6, 48);
-            this.tboxEditKategoriSearch.Name = "tboxEditKategoriSearch";
-            this.tboxEditKategoriSearch.ShortcutsEnabled = false;
-            this.tboxEditKategoriSearch.Size = new System.Drawing.Size(640, 26);
-            this.tboxEditKategoriSearch.TabIndex = 32;
-            this.tboxEditKategoriSearch.Tag = "Aramak istediğiniz ürün";
-            // 
-            // tboxEditKategori
-            // 
-            this.tboxEditKategori.Location = new System.Drawing.Point(276, 109);
-            this.tboxEditKategori.Name = "tboxEditKategori";
-            this.tboxEditKategori.Size = new System.Drawing.Size(361, 22);
-            this.tboxEditKategori.TabIndex = 33;
-            // 
-            // tboxEditKategoriId
-            // 
-            this.tboxEditKategoriId.Location = new System.Drawing.Point(276, 162);
-            this.tboxEditKategoriId.Name = "tboxEditKategoriId";
-            this.tboxEditKategoriId.Size = new System.Drawing.Size(361, 22);
-            this.tboxEditKategoriId.TabIndex = 34;
             // 
             // btnEditKategoriGuncelle
             // 
@@ -1549,6 +1447,105 @@ namespace StokTakipSistemi
             this.textBox2.Size = new System.Drawing.Size(361, 22);
             this.textBox2.TabIndex = 35;
             // 
+            // tboxEditKategoriId
+            // 
+            this.tboxEditKategoriId.Location = new System.Drawing.Point(276, 162);
+            this.tboxEditKategoriId.Name = "tboxEditKategoriId";
+            this.tboxEditKategoriId.Size = new System.Drawing.Size(361, 22);
+            this.tboxEditKategoriId.TabIndex = 34;
+            // 
+            // tboxEditKategori
+            // 
+            this.tboxEditKategori.Location = new System.Drawing.Point(276, 109);
+            this.tboxEditKategori.Name = "tboxEditKategori";
+            this.tboxEditKategori.Size = new System.Drawing.Size(361, 22);
+            this.tboxEditKategori.TabIndex = 33;
+            // 
+            // tboxEditKategoriSearch
+            // 
+            this.tboxEditKategoriSearch.BackColor = System.Drawing.Color.Bisque;
+            this.tboxEditKategoriSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tboxEditKategoriSearch.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.tboxEditKategoriSearch.Location = new System.Drawing.Point(6, 48);
+            this.tboxEditKategoriSearch.Name = "tboxEditKategoriSearch";
+            this.tboxEditKategoriSearch.ShortcutsEnabled = false;
+            this.tboxEditKategoriSearch.Size = new System.Drawing.Size(640, 26);
+            this.tboxEditKategoriSearch.TabIndex = 32;
+            this.tboxEditKategoriSearch.Tag = "Aramak istediğiniz ürün";
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.Honeydew;
+            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label39.Location = new System.Drawing.Point(6, 103);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(232, 34);
+            this.label39.TabIndex = 15;
+            this.label39.Text = "Kategori adı:";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.Honeydew;
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label40.Location = new System.Drawing.Point(6, 156);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(232, 34);
+            this.label40.TabIndex = 16;
+            this.label40.Text = "Kategori Id:";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dgwEditKategoriListesi
+            // 
+            this.dgwEditKategoriListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwEditKategoriListesi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgwEditKategoriListesi.Location = new System.Drawing.Point(664, 3);
+            this.dgwEditKategoriListesi.Name = "dgwEditKategoriListesi";
+            this.dgwEditKategoriListesi.RowHeadersWidth = 51;
+            this.dgwEditKategoriListesi.RowTemplate.Height = 24;
+            this.dgwEditKategoriListesi.Size = new System.Drawing.Size(699, 582);
+            this.dgwEditKategoriListesi.TabIndex = 1;
+            // 
+            // tpageSatisRaporlari
+            // 
+            this.tpageSatisRaporlari.Location = new System.Drawing.Point(4, 25);
+            this.tpageSatisRaporlari.Name = "tpageSatisRaporlari";
+            this.tpageSatisRaporlari.Padding = new System.Windows.Forms.Padding(3);
+            this.tpageSatisRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageSatisRaporlari.TabIndex = 6;
+            this.tpageSatisRaporlari.Text = "Satış Raporları";
+            this.tpageSatisRaporlari.UseVisualStyleBackColor = true;
+            // 
+            // tpageAlimRaporlari
+            // 
+            this.tpageAlimRaporlari.Location = new System.Drawing.Point(4, 25);
+            this.tpageAlimRaporlari.Name = "tpageAlimRaporlari";
+            this.tpageAlimRaporlari.Padding = new System.Windows.Forms.Padding(3);
+            this.tpageAlimRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageAlimRaporlari.TabIndex = 7;
+            this.tpageAlimRaporlari.Text = "Satın Alma Raporları";
+            this.tpageAlimRaporlari.UseVisualStyleBackColor = true;
+            // 
+            // tpageParaAkisiRaporlari
+            // 
+            this.tpageParaAkisiRaporlari.Location = new System.Drawing.Point(4, 25);
+            this.tpageParaAkisiRaporlari.Name = "tpageParaAkisiRaporlari";
+            this.tpageParaAkisiRaporlari.Padding = new System.Windows.Forms.Padding(3);
+            this.tpageParaAkisiRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageParaAkisiRaporlari.TabIndex = 8;
+            this.tpageParaAkisiRaporlari.Text = "Para Giriş-Çıkış Raporları";
+            this.tpageParaAkisiRaporlari.UseVisualStyleBackColor = true;
+            // 
+            // tpageKullanicilar
+            // 
+            this.tpageKullanicilar.Location = new System.Drawing.Point(4, 25);
+            this.tpageKullanicilar.Name = "tpageKullanicilar";
+            this.tpageKullanicilar.Padding = new System.Windows.Forms.Padding(3);
+            this.tpageKullanicilar.Size = new System.Drawing.Size(1366, 588);
+            this.tpageKullanicilar.TabIndex = 9;
+            this.tpageKullanicilar.Text = "Kullanıcı Bilgileri";
+            this.tpageKullanicilar.UseVisualStyleBackColor = true;
+            // 
             // FormYetkili
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1559,6 +1556,7 @@ namespace StokTakipSistemi
             this.IsMdiContainer = true;
             this.Name = "FormYetkili";
             this.Text = "FormYetkili";
+            this.Load += new System.EventHandler(this.FormYetkili_Load);
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tpageSatis.ResumeLayout(false);
@@ -1582,13 +1580,13 @@ namespace StokTakipSistemi
             this.tpageGecmis.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgwAlisVerisGecmisi)).EndInit();
             this.tpageUrunDuzenle.ResumeLayout(false);
-            this.tpageKategoriDuzenle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwEditUrunListesi)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwEditKategoriListesi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwEditUrunListesi)).EndInit();
+            this.tpageKategoriDuzenle.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwEditKategoriListesi)).EndInit();
             this.ResumeLayout(false);
 
         }

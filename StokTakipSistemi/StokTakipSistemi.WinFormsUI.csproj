@@ -131,6 +131,10 @@
       <Project>{B57F2EC8-766F-4A89-8235-ED4F1DBF81EE}</Project>
       <Name>StokTakipSistemi.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StokTakipSistemi.DataAccess\StokTakipSistemi.DataAccess.csproj">
+      <Project>{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}</Project>
+      <Name>StokTakipSistemi.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StokTakipSistemi.Entities\StokTakipSistemi.Entities.csproj">
       <Project>{F6389D45-6DDA-4C8A-A273-D039C173BC02}</Project>
       <Name>StokTakipSistemi.Entities</Name>

@@ -41,12 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUrunService.cs" />
+    <Compile Include="Concrete\KullaniciManager.cs" />
     <Compile Include="Concrete\UrunManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\StokTakipSistemi.DataAccess\StokTakipSistemi.DataAccess.csproj">
       <Project>{4E85FEC4-E42A-4CB5-B51A-C76CC6024338}</Project>

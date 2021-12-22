@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StokTakipSistemi.DataAccess.Concrete
+namespace StokTakipSistemi.DataAccess.Concrete.EntityFramework
 {
     public class StokTakipSistemiContext:DbContext
     {
@@ -16,5 +16,9 @@ namespace StokTakipSistemi.DataAccess.Concrete
 
         }
         public DbSet<tbl_urun> Urunler { get; set; }
+    }
+    public class StokTakipSistemiContextKullanici : DbContext
+    {
+        public DbSet<tbl_kullanici> Kullanicilar { get; set; }
     }
 }
