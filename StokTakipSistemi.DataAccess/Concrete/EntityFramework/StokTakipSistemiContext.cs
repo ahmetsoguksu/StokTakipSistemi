@@ -16,9 +16,8 @@ namespace StokTakipSistemi.DataAccess.Concrete.EntityFramework
 
         }
         public DbSet<tbl_urun> Urunler { get; set; }
-    }
-    public class StokTakipSistemiContextKullanici : DbContext
-    {
+        public DbSet<tbl_kategori> Kategoriler { get; set; }
         public DbSet<tbl_kullanici> Kullanicilar { get; set; }
+
     }
 }

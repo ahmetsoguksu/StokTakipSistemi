@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="Abstract\Itbl_kategoriDal.cs" />
     <Compile Include="Abstract\Itbl_urunDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfEntityRepositoryBase.cs" />
+    <Compile Include="Concrete\EntityFramework\Eftbl_kategoriDal.cs" />
     <Compile Include="Concrete\EntityFramework\StokTakipSistemiContext.cs" />
     <Compile Include="Concrete\EntityFramework\tbl_kullaniciDal.cs" />
     <Compile Include="Concrete\EntityFramework\Eftbl_urunDal.cs" />

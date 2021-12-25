@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StokTakipSistemi.DataAccess.Abstract
 {
-    public interface Itbl_urunDal:IEntityRepository<tbl_urun>
-    { 
+    public interface Itbl_kategoriDal:IEntityRepository<tbl_kategori>
+    {
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StokTakipSistemi.Entities.Abstract;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StokTakipSistemi.Entities.Concrete
 {
-    public class tbl_urun
+    public class tbl_urun:IEntity
     {
         [Key]
         public int urun_id { get; set; }

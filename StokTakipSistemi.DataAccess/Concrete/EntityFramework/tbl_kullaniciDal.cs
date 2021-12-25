@@ -14,7 +14,7 @@ namespace StokTakipSistemi.DataAccess.Concrete
 
         public List<tbl_kullanici> GetAllKullanici()
         {
-            using (StokTakipSistemiContextKullanici context = new StokTakipSistemiContextKullanici())
+            using (StokTakipSistemiContext context = new StokTakipSistemiContext())
             {
                 //tüm kullanıcıları listele
                 return context.Kullanicilar.ToList();
@@ -22,7 +22,7 @@ namespace StokTakipSistemi.DataAccess.Concrete
         }
         public tbl_kullanici GetKullanici (int id)
         {
-            using (StokTakipSistemiContextKullanici context = new StokTakipSistemiContextKullanici())
+            using (StokTakipSistemiContext context = new StokTakipSistemiContext())
             {
                 //id'si alınan kullanıcıyı getir
                 return context.Kullanicilar.SingleOrDefault(p => p.kullanici_id == id);
@@ -39,7 +39,7 @@ namespace StokTakipSistemi.DataAccess.Concrete
         }
         public void Register(string ad, string soyad, bool seviye)
         {
-            using (StokTakipSistemiContextKullanici context = new StokTakipSistemiContextKullanici())
+            using (StokTakipSistemiContext context = new StokTakipSistemiContext())
             {
                 //kayıt yap veritabanına ve messagebox ile başarılı de
             }
@@ -47,7 +47,7 @@ namespace StokTakipSistemi.DataAccess.Concrete
         }
         public void Update(int id)
         {
-            using (StokTakipSistemiContextKullanici context = new StokTakipSistemiContextKullanici())
+            using (StokTakipSistemiContext context = new StokTakipSistemiContext())
             {
                 //id'si alınan kullanıcının bilgilerini düzenle
 
