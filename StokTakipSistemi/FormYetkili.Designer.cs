@@ -611,6 +611,7 @@ namespace StokTakipSistemi
             this.cboxKategori.Name = "cboxKategori";
             this.cboxKategori.Size = new System.Drawing.Size(264, 24);
             this.cboxKategori.TabIndex = 5;
+            this.cboxKategori.SelectedIndexChanged += new System.EventHandler(this.cboxKategori_SelectedIndexChanged);
             // 
             // tboxUrunAdi
             // 
@@ -808,6 +809,7 @@ namespace StokTakipSistemi
             this.cboxKategoriAlim.Name = "cboxKategoriAlim";
             this.cboxKategoriAlim.Size = new System.Drawing.Size(264, 24);
             this.cboxKategoriAlim.TabIndex = 5;
+            this.cboxKategoriAlim.SelectedIndexChanged += new System.EventHandler(this.cboxKategoriAlim_SelectedIndexChanged);
             // 
             // tboxUrunAdiAlim
             // 
@@ -845,7 +847,8 @@ namespace StokTakipSistemi
             this.groupBox5.Size = new System.Drawing.Size(445, 582);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Ürün Bilgisi";            // 
+            this.groupBox5.Text = "Ürün Bilgisi";
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
@@ -1134,6 +1137,7 @@ namespace StokTakipSistemi
             this.cboxKategoriStok.Name = "cboxKategoriStok";
             this.cboxKategoriStok.Size = new System.Drawing.Size(178, 24);
             this.cboxKategoriStok.TabIndex = 1;
+            this.cboxKategoriStok.SelectedIndexChanged += new System.EventHandler(this.cboxKategoriStok_SelectedIndexChanged);
             // 
             // tboxUrunAdiArama
             // 
@@ -1308,6 +1312,7 @@ namespace StokTakipSistemi
             this.cboxEditUrunKategori.Name = "cboxEditUrunKategori";
             this.cboxEditUrunKategori.Size = new System.Drawing.Size(361, 24);
             this.cboxEditUrunKategori.TabIndex = 23;
+            this.cboxEditUrunKategori.SelectedIndexChanged += new System.EventHandler(this.cboxEditUrunKategori_SelectedIndexChanged);
             // 
             // label34
             // 

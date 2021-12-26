@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IKategoriService.cs" />
     <Compile Include="Abstract\IUrunService.cs" />
+    <Compile Include="Concrete\KategoriManager.cs" />
     <Compile Include="Concrete\KullaniciManager.cs" />
     <Compile Include="Concrete\UrunManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -16,5 +16,10 @@ namespace StokTakipSistemi.Business.Concrete
         {
             return _urunDal.GetAll();
         }
+
+        public List<tbl_urun> GetProductsByCategory(int Kategori_id)
+        {
+            return _urunDal.GetAll(p => p.kategori_id == Kategori_id);
+        }
     }
 }

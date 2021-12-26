@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace StokTakipSistemi.Business.Abstract
 {
-    public interface IUrunService
+    public interface IKategoriService
     {
-        List<tbl_urun> GetAll();
-        List<tbl_urun> GetProductsByCategory(int Kategori_id);
+        List<tbl_kategori> GetAll();
     }
 }
