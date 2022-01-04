@@ -114,6 +114,8 @@ namespace StokTakipSistemi
             this.dgwAlisVerisGecmisi = new System.Windows.Forms.DataGridView();
             this.tpageUrunDuzenle = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tboxEditUrunKdvOrani = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
             this.tboxEditUrunSearch = new System.Windows.Forms.TextBox();
             this.btnEditUrunGuncelle = new System.Windows.Forms.Button();
             this.btnEditUrunEkle = new System.Windows.Forms.Button();
@@ -147,8 +149,6 @@ namespace StokTakipSistemi
             this.tpageAlimRaporlari = new System.Windows.Forms.TabPage();
             this.tpageParaAkisiRaporlari = new System.Windows.Forms.TabPage();
             this.tpageKullanicilar = new System.Windows.Forms.TabPage();
-            this.tboxEditUrunKdvOrani = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpageSatis.SuspendLayout();
@@ -237,7 +237,7 @@ namespace StokTakipSistemi
             this.tpageSatis.Location = new System.Drawing.Point(4, 25);
             this.tpageSatis.Name = "tpageSatis";
             this.tpageSatis.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageSatis.Size = new System.Drawing.Size(1366, 588);
+            this.tpageSatis.Size = new System.Drawing.Size(1366, 650);
             this.tpageSatis.TabIndex = 0;
             this.tpageSatis.Text = "Satış Yap";
             this.tpageSatis.UseVisualStyleBackColor = true;
@@ -475,7 +475,7 @@ namespace StokTakipSistemi
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox2.Location = new System.Drawing.Point(918, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(445, 582);
+            this.groupBox2.Size = new System.Drawing.Size(445, 644);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ürün Seçin";
@@ -487,7 +487,7 @@ namespace StokTakipSistemi
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Location = new System.Drawing.Point(6, 121);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(135, 40);
+            this.label19.Size = new System.Drawing.Size(135, 102);
             this.label19.TabIndex = 13;
             this.label19.Text = "Ürün id:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,7 +503,7 @@ namespace StokTakipSistemi
             // 
             this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label7.Location = new System.Drawing.Point(3, 375);
+            this.label7.Location = new System.Drawing.Point(3, 437);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(439, 139);
             this.label7.TabIndex = 12;
@@ -529,7 +529,7 @@ namespace StokTakipSistemi
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Location = new System.Drawing.Point(6, 171);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 40);
+            this.label1.Size = new System.Drawing.Size(135, 102);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -551,7 +551,7 @@ namespace StokTakipSistemi
             // btnSatisYap
             // 
             this.btnSatisYap.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSatisYap.Location = new System.Drawing.Point(3, 514);
+            this.btnSatisYap.Location = new System.Drawing.Point(3, 576);
             this.btnSatisYap.Name = "btnSatisYap";
             this.btnSatisYap.Size = new System.Drawing.Size(439, 65);
             this.btnSatisYap.TabIndex = 10;
@@ -565,7 +565,7 @@ namespace StokTakipSistemi
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Location = new System.Drawing.Point(6, 335);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 40);
+            this.label5.Size = new System.Drawing.Size(135, 102);
             this.label5.TabIndex = 8;
             this.label5.Text = "Toplam Satış Fiyatı:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,7 +577,7 @@ namespace StokTakipSistemi
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Location = new System.Drawing.Point(6, 253);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 40);
+            this.label3.Size = new System.Drawing.Size(135, 102);
             this.label3.TabIndex = 2;
             this.label3.Text = "Birim Satış Fiyatı:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -589,7 +589,7 @@ namespace StokTakipSistemi
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Location = new System.Drawing.Point(6, 296);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 40);
+            this.label4.Size = new System.Drawing.Size(135, 102);
             this.label4.TabIndex = 3;
             this.label4.Text = "Adet:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -601,7 +601,7 @@ namespace StokTakipSistemi
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Location = new System.Drawing.Point(6, 213);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 40);
+            this.label2.Size = new System.Drawing.Size(135, 102);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kategori:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -637,7 +637,7 @@ namespace StokTakipSistemi
             this.tpageAlis.Location = new System.Drawing.Point(4, 25);
             this.tpageAlis.Name = "tpageAlis";
             this.tpageAlis.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageAlis.Size = new System.Drawing.Size(1366, 588);
+            this.tpageAlis.Size = new System.Drawing.Size(1366, 650);
             this.tpageAlis.TabIndex = 1;
             this.tpageAlis.Text = "Satın Alım Yap";
             this.tpageAlis.UseVisualStyleBackColor = true;
@@ -649,7 +649,7 @@ namespace StokTakipSistemi
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(448, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(915, 582);
+            this.groupBox6.Size = new System.Drawing.Size(915, 644);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ürün Listesi";
@@ -674,7 +674,7 @@ namespace StokTakipSistemi
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox7.Location = new System.Drawing.Point(467, 18);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(445, 561);
+            this.groupBox7.Size = new System.Drawing.Size(445, 623);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ürün Seçin";
@@ -686,7 +686,7 @@ namespace StokTakipSistemi
             this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label31.Location = new System.Drawing.Point(6, 101);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(135, 40);
+            this.label31.Size = new System.Drawing.Size(135, 102);
             this.label31.TabIndex = 15;
             this.label31.Text = "Ürün id:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -702,7 +702,7 @@ namespace StokTakipSistemi
             // 
             this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label23.Location = new System.Drawing.Point(3, 354);
+            this.label23.Location = new System.Drawing.Point(3, 416);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(439, 139);
             this.label23.TabIndex = 12;
@@ -728,7 +728,7 @@ namespace StokTakipSistemi
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Location = new System.Drawing.Point(6, 152);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(135, 36);
+            this.label25.Size = new System.Drawing.Size(135, 98);
             this.label25.TabIndex = 0;
             this.label25.Text = "Ürün Adı:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -750,7 +750,7 @@ namespace StokTakipSistemi
             // btnAlimYap
             // 
             this.btnAlimYap.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAlimYap.Location = new System.Drawing.Point(3, 493);
+            this.btnAlimYap.Location = new System.Drawing.Point(3, 555);
             this.btnAlimYap.Name = "btnAlimYap";
             this.btnAlimYap.Size = new System.Drawing.Size(439, 65);
             this.btnAlimYap.TabIndex = 10;
@@ -764,7 +764,7 @@ namespace StokTakipSistemi
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Location = new System.Drawing.Point(6, 318);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(135, 36);
+            this.label26.Size = new System.Drawing.Size(135, 98);
             this.label26.TabIndex = 8;
             this.label26.Text = "Toplam Alım Fiyatı:";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -776,7 +776,7 @@ namespace StokTakipSistemi
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label27.Location = new System.Drawing.Point(6, 234);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(135, 36);
+            this.label27.Size = new System.Drawing.Size(135, 98);
             this.label27.TabIndex = 2;
             this.label27.Text = "Birim Alış Fiyatı:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -788,7 +788,7 @@ namespace StokTakipSistemi
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label28.Location = new System.Drawing.Point(6, 275);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(135, 41);
+            this.label28.Size = new System.Drawing.Size(135, 103);
             this.label28.TabIndex = 3;
             this.label28.Text = "Adet:";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -800,7 +800,7 @@ namespace StokTakipSistemi
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.Location = new System.Drawing.Point(6, 192);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(135, 38);
+            this.label29.Size = new System.Drawing.Size(135, 100);
             this.label29.TabIndex = 1;
             this.label29.Text = "Kategori:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -848,7 +848,7 @@ namespace StokTakipSistemi
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(445, 582);
+            this.groupBox5.Size = new System.Drawing.Size(445, 644);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ürün Bilgisi";
@@ -1040,7 +1040,7 @@ namespace StokTakipSistemi
             this.tpageStok.Location = new System.Drawing.Point(4, 25);
             this.tpageStok.Name = "tpageStok";
             this.tpageStok.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageStok.Size = new System.Drawing.Size(1366, 588);
+            this.tpageStok.Size = new System.Drawing.Size(1366, 650);
             this.tpageStok.TabIndex = 2;
             this.tpageStok.Text = "Stok Bilgisi";
             this.tpageStok.UseVisualStyleBackColor = true;
@@ -1056,7 +1056,7 @@ namespace StokTakipSistemi
             this.dgwStokUrunListesi.ReadOnly = true;
             this.dgwStokUrunListesi.RowHeadersWidth = 51;
             this.dgwStokUrunListesi.RowTemplate.Height = 24;
-            this.dgwStokUrunListesi.Size = new System.Drawing.Size(1360, 511);
+            this.dgwStokUrunListesi.Size = new System.Drawing.Size(1360, 573);
             this.dgwStokUrunListesi.TabIndex = 1;
             // 
             // groupBox8
@@ -1159,7 +1159,7 @@ namespace StokTakipSistemi
             this.tpageGecmis.Controls.Add(this.dgwAlisVerisGecmisi);
             this.tpageGecmis.Location = new System.Drawing.Point(4, 25);
             this.tpageGecmis.Name = "tpageGecmis";
-            this.tpageGecmis.Size = new System.Drawing.Size(1366, 588);
+            this.tpageGecmis.Size = new System.Drawing.Size(1366, 650);
             this.tpageGecmis.TabIndex = 3;
             this.tpageGecmis.Text = "Alış - Veriş Geçmişi";
             this.tpageGecmis.UseVisualStyleBackColor = true;
@@ -1175,7 +1175,7 @@ namespace StokTakipSistemi
             this.dgwAlisVerisGecmisi.ReadOnly = true;
             this.dgwAlisVerisGecmisi.RowHeadersWidth = 51;
             this.dgwAlisVerisGecmisi.RowTemplate.Height = 24;
-            this.dgwAlisVerisGecmisi.Size = new System.Drawing.Size(1366, 588);
+            this.dgwAlisVerisGecmisi.Size = new System.Drawing.Size(1366, 650);
             this.dgwAlisVerisGecmisi.TabIndex = 0;
             // 
             // tpageUrunDuzenle
@@ -1217,6 +1217,24 @@ namespace StokTakipSistemi
             this.groupBox9.TabIndex = 25;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Ürün Bilgileri Düzenle";
+            // 
+            // tboxEditUrunKdvOrani
+            // 
+            this.tboxEditUrunKdvOrani.Location = new System.Drawing.Point(6, 478);
+            this.tboxEditUrunKdvOrani.Name = "tboxEditUrunKdvOrani";
+            this.tboxEditUrunKdvOrani.Size = new System.Drawing.Size(361, 22);
+            this.tboxEditUrunKdvOrani.TabIndex = 31;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.Honeydew;
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label41.Location = new System.Drawing.Point(6, 441);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(361, 34);
+            this.label41.TabIndex = 30;
+            this.label41.Text = "KDV Oranı:";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tboxEditUrunSearch
             // 
@@ -1403,7 +1421,7 @@ namespace StokTakipSistemi
             this.tpageKategoriDuzenle.Location = new System.Drawing.Point(4, 25);
             this.tpageKategoriDuzenle.Name = "tpageKategoriDuzenle";
             this.tpageKategoriDuzenle.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageKategoriDuzenle.Size = new System.Drawing.Size(1366, 588);
+            this.tpageKategoriDuzenle.Size = new System.Drawing.Size(1366, 650);
             this.tpageKategoriDuzenle.TabIndex = 5;
             this.tpageKategoriDuzenle.Text = "Kategorileri Düzenle";
             this.tpageKategoriDuzenle.UseVisualStyleBackColor = true;
@@ -1525,15 +1543,16 @@ namespace StokTakipSistemi
             this.dgwEditKategoriListesi.Name = "dgwEditKategoriListesi";
             this.dgwEditKategoriListesi.RowHeadersWidth = 51;
             this.dgwEditKategoriListesi.RowTemplate.Height = 24;
-            this.dgwEditKategoriListesi.Size = new System.Drawing.Size(699, 582);
+            this.dgwEditKategoriListesi.Size = new System.Drawing.Size(699, 644);
             this.dgwEditKategoriListesi.TabIndex = 1;
+            this.dgwEditKategoriListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwEditKategoriListesi_CellContentClick);
             // 
             // tpageSatisRaporlari
             // 
             this.tpageSatisRaporlari.Location = new System.Drawing.Point(4, 25);
             this.tpageSatisRaporlari.Name = "tpageSatisRaporlari";
             this.tpageSatisRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageSatisRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageSatisRaporlari.Size = new System.Drawing.Size(1366, 650);
             this.tpageSatisRaporlari.TabIndex = 6;
             this.tpageSatisRaporlari.Text = "Satış Raporları";
             this.tpageSatisRaporlari.UseVisualStyleBackColor = true;
@@ -1543,7 +1562,7 @@ namespace StokTakipSistemi
             this.tpageAlimRaporlari.Location = new System.Drawing.Point(4, 25);
             this.tpageAlimRaporlari.Name = "tpageAlimRaporlari";
             this.tpageAlimRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageAlimRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageAlimRaporlari.Size = new System.Drawing.Size(1366, 650);
             this.tpageAlimRaporlari.TabIndex = 7;
             this.tpageAlimRaporlari.Text = "Satın Alma Raporları";
             this.tpageAlimRaporlari.UseVisualStyleBackColor = true;
@@ -1553,7 +1572,7 @@ namespace StokTakipSistemi
             this.tpageParaAkisiRaporlari.Location = new System.Drawing.Point(4, 25);
             this.tpageParaAkisiRaporlari.Name = "tpageParaAkisiRaporlari";
             this.tpageParaAkisiRaporlari.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageParaAkisiRaporlari.Size = new System.Drawing.Size(1366, 588);
+            this.tpageParaAkisiRaporlari.Size = new System.Drawing.Size(1366, 650);
             this.tpageParaAkisiRaporlari.TabIndex = 8;
             this.tpageParaAkisiRaporlari.Text = "Para Giriş-Çıkış Raporları";
             this.tpageParaAkisiRaporlari.UseVisualStyleBackColor = true;
@@ -1563,28 +1582,10 @@ namespace StokTakipSistemi
             this.tpageKullanicilar.Location = new System.Drawing.Point(4, 25);
             this.tpageKullanicilar.Name = "tpageKullanicilar";
             this.tpageKullanicilar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpageKullanicilar.Size = new System.Drawing.Size(1366, 588);
+            this.tpageKullanicilar.Size = new System.Drawing.Size(1366, 650);
             this.tpageKullanicilar.TabIndex = 9;
             this.tpageKullanicilar.Text = "Kullanıcı Bilgileri";
             this.tpageKullanicilar.UseVisualStyleBackColor = true;
-            // 
-            // tboxEditUrunKdvOrani
-            // 
-            this.tboxEditUrunKdvOrani.Location = new System.Drawing.Point(6, 478);
-            this.tboxEditUrunKdvOrani.Name = "tboxEditUrunKdvOrani";
-            this.tboxEditUrunKdvOrani.Size = new System.Drawing.Size(361, 22);
-            this.tboxEditUrunKdvOrani.TabIndex = 31;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.Honeydew;
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.Location = new System.Drawing.Point(6, 441);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(361, 34);
-            this.label41.TabIndex = 30;
-            this.label41.Text = "KDV Oranı:";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormYetkili
             // 

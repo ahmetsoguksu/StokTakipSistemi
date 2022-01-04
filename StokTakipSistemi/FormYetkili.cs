@@ -1,5 +1,6 @@
 ﻿using StokTakipSistemi.Business.Abstract;
 using StokTakipSistemi.Business.Concrete;
+using StokTakipSistemi.Business.DependencyResolvers.Ninject;
 using StokTakipSistemi.DataAccess.Concrete.EntityFramework;
 using StokTakipSistemi.Entities.Concrete;
 using System;
@@ -19,8 +20,8 @@ namespace StokTakipSistemi
         public FormYetkili()
         {
             InitializeComponent();
-            _urunService = new UrunManager(new Eftbl_urunDal());
-            _kategoriService = new KategoriManager(new Eftbl_kategoriDal());
+            _urunService = InstanceFactory.GetInstance<IUrunService>();
+            _kategoriService = InstanceFactory.GetInstance<IKategoriService>();
         }
         public IUrunService _urunService;
         public IKategoriService _kategoriService;
@@ -47,6 +48,8 @@ namespace StokTakipSistemi
             cboxEditUrunKategori.DataSource = _kategoriService.GetAll();
             cboxEditUrunKategori.DisplayMember = "kategori_ad";
             cboxEditUrunKategori.ValueMember = "kategori_id";
+
+            dgwEditKategoriListesi.DataSource = _kategoriService.GetAll();
         }
 
         public void LoadProductsYetkili()
@@ -245,6 +248,11 @@ namespace StokTakipSistemi
 
                 MessageBox.Show(exception.Message);
             }
+        }
+
+        private void dgwEditKategoriListesi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
