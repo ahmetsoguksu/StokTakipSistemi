@@ -41,6 +41,8 @@ namespace StokTakipSistemi
             this.cboxEklencekUrunKategori = new System.Windows.Forms.ComboBox();
             this.linklblYeniKategori = new System.Windows.Forms.LinkLabel();
             this.btnUrunuEkle = new System.Windows.Forms.Button();
+            this.tboxEklenecekUrunKdvOrani = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@ namespace StokTakipSistemi
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 34);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Birim Fiyat:";
+            this.label3.Text = "Birim Satış Fiyatı:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -106,10 +108,12 @@ namespace StokTakipSistemi
             // 
             // tboxEklenecekUrunMevcutStok
             // 
+            this.tboxEklenecekUrunMevcutStok.Enabled = false;
             this.tboxEklenecekUrunMevcutStok.Location = new System.Drawing.Point(218, 230);
             this.tboxEklenecekUrunMevcutStok.Name = "tboxEklenecekUrunMevcutStok";
             this.tboxEklenecekUrunMevcutStok.Size = new System.Drawing.Size(292, 22);
             this.tboxEklenecekUrunMevcutStok.TabIndex = 9;
+            this.tboxEklenecekUrunMevcutStok.Text = "0";
             // 
             // label2
             // 
@@ -138,7 +142,6 @@ namespace StokTakipSistemi
             this.linklblYeniKategori.TabStop = true;
             this.linklblYeniKategori.Text = "Yeni kategori eklemek için tıklayın!";
             this.linklblYeniKategori.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linklblYeniKategori.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // btnUrunuEkle
             // 
@@ -146,18 +149,38 @@ namespace StokTakipSistemi
             this.btnUrunuEkle.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnUrunuEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunuEkle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUrunuEkle.Location = new System.Drawing.Point(0, 270);
+            this.btnUrunuEkle.Location = new System.Drawing.Point(0, 317);
             this.btnUrunuEkle.Name = "btnUrunuEkle";
             this.btnUrunuEkle.Size = new System.Drawing.Size(522, 55);
             this.btnUrunuEkle.TabIndex = 14;
             this.btnUrunuEkle.Text = "Ürünü Ekle";
             this.btnUrunuEkle.UseVisualStyleBackColor = false;
+            this.btnUrunuEkle.Click += new System.EventHandler(this.btnUrunuEkle_Click);
+            // 
+            // tboxEklenecekUrunKdvOrani
+            // 
+            this.tboxEklenecekUrunKdvOrani.Location = new System.Drawing.Point(218, 273);
+            this.tboxEklenecekUrunKdvOrani.Name = "tboxEklenecekUrunKdvOrani";
+            this.tboxEklenecekUrunKdvOrani.Size = new System.Drawing.Size(292, 22);
+            this.tboxEklenecekUrunKdvOrani.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Location = new System.Drawing.Point(12, 267);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(180, 34);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "KDV Oranı:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormUrunEkleChild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 325);
+            this.ClientSize = new System.Drawing.Size(522, 372);
+            this.Controls.Add(this.tboxEklenecekUrunKdvOrani);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnUrunuEkle);
             this.Controls.Add(this.linklblYeniKategori);
             this.Controls.Add(this.label2);
@@ -176,6 +199,7 @@ namespace StokTakipSistemi
             this.MinimizeBox = false;
             this.Name = "FormUrunEkleChild";
             this.Text = "Yeni Ürün Ekle";
+            this.Load += new System.EventHandler(this.FormUrunEkleChild_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +219,7 @@ namespace StokTakipSistemi
         private System.Windows.Forms.ComboBox cboxEklencekUrunKategori;
         private System.Windows.Forms.LinkLabel linklblYeniKategori;
         private System.Windows.Forms.Button btnUrunuEkle;
+        private System.Windows.Forms.TextBox tboxEklenecekUrunKdvOrani;
+        private System.Windows.Forms.Label label6;
     }
 }

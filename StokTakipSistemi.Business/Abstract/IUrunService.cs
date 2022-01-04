@@ -11,5 +11,9 @@ namespace StokTakipSistemi.Business.Abstract
     {
         List<tbl_urun> GetAll();
         List<tbl_urun> GetProductsByCategory(int Kategori_id);
+        List<tbl_urun> GetProductsByProductName(string Urun_ad);
+        void Add(tbl_urun tbl_urun);
+        void Update(tbl_urun tbl_urun);
+        void Delete(tbl_urun tbl_urun);
     }
 }
