@@ -10,5 +10,8 @@ namespace StokTakipSistemi.Business.Abstract
     public interface IKategoriService
     {
         List<tbl_kategori> GetAll();
+        List<tbl_kategori> GetCategoriesByCategoryName(string Kategori_ad);
+        void Update(tbl_kategori tbl_Kategori);
+        void Add(tbl_kategori tbl_kategori);
     }
 }
